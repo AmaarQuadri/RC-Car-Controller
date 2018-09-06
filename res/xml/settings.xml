@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="100"
+        android:key="maxSpeed"
+        android:title="Max Speed"
+        android:summary="The maximum speed that the RC car can go. Must be between 0 and 253."/>
+
+    <EditTextPreference
+        android:defaultValue="1"
+        android:key="maxAcceleration"
+        android:title="Max Acceleration"
+        android:summary="The maximum acceleration that the RC car can endure."/>
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="reverseMotorDirection"
+        android:title="Reverse Motor Direction"
+        android:summary="Whether or not to switch the direction the motor considers to be forwards."/>
+
+    <EditTextPreference
+        android:defaultValue="90"
+        android:key="centerAngle"
+        android:title="Center Angle"
+        android:summary="The angle at which the servo motor causes the wheels to point perfectly straight. Increase if pulling to left, and decrease if pulling to right."/>
+
+    <EditTextPreference
+        android:defaultValue="@string/defaultAngluarVelocity"
+        android:key="angularVelocity"
+        android:title="Angular Velocity"
+        android:summary="The angular velocity at which the servo motor rotates." />
+
+    <EditTextPreference
+        android:defaultValue="75"
+        android:key="maxAngularDisplacement"
+        android:title="Max Angular Displacement"
+        android:summary="The largest angle that the servo can turn from the Center Angle." />
+
+    <EditTextPreference
+        android:defaultValue="@string/defaultBrakingTorqueToEngineTorqueRatio"
+        android:key="brakingTorqueToEngineTorqueRatio"
+        android:title="Braking Torque To Engine Torque Ratio"
+        android:summary="The ratio of the strengths of the brakes and engine when both are maxed out." />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="debugMode"
+        android:title="Debug Mode"
+        android:summary="When turned on, no commands will be sent to the Arduino." />
+</PreferenceScreen>
